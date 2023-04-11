@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MauiAppTEST.ViewModel"
+             xmlns:viewmodel2="clr-namespace:MauiAppTEST.View"
+             xmlns:viewmodel3="clr-namespace:MauiAppTEST"
+             x:DataType="viewmodel:MainViewModel"
+             x:Class="MauiAppTEST.MainPage">
+
+    <ScrollView WidthRequest="10000">
+        <VerticalStackLayout
+        Spacing="25"
+
+        HorizontalOptions="Center">
+        <!--Command="{Binding NavigationCommand}"-->
+        
+        
+
+        <Button Text="CityPage"
+                Command="{Binding NavigationCommand}"/>
+
+        <Button Text="LoginPage"
+                Command="{Binding NavigateToLoginPageCommand}"/>
+
+        <Button Text="SignUpPage"
+                Command="{Binding NavigateToSignUpPageCommand}"/>
+
+        <Button Text="ProfilePage"
+                Command="{Binding NavigateToProfilePageCommand}"/>
+
+        <Button Text="AdminPage"
+                Command="{Binding NavigateToAdminPageCommand}"/>
+
+        <Button Text="ManageUsersPage"
+                Command="{Binding NavigateToManageUsersPageCommand}"/>
+
+        <Button Text="ActivityPage"
+                Command="{Binding NavigateToActivityPageCommand}"/>
+
+        <Button Text="MapPage"
+                Command="{Binding NavigateToMapPageCommand}"/>
+
+        <Button Text="ActivityDetailsPage"
+                Command="{Binding NavigateToActivityDetailsPageCommand}"/>
+
+        <Button Text="SettingsPage"
+                Command="{Binding NavigateToSettingsPageCommand}"/>
+
+        <Button Text="AddActivity"
+                Command="{Binding NavigateToAddActivityPageCommand}"/>
+
+        <Button Text="SearchPage"
+                Command="{Binding NavigateToSearchPageCommand}"/>
+
+
+    </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
